@@ -12,15 +12,14 @@ use Illuminate\Database\Eloquent\Model;
  */
 class {{modelName}} extends Model
 {
+    protected $table = '{{databaseName}}';
+    public $timestamps = false;
+    protected $perPage = 10;
+
     {{softDeletes}}
     static $rules = [{{rules}}
     ];
 
-    protected $table = {{databaseName}};
-
-    public timestamps = false;
-
-    protected $perPage = 10;
 
     /**
      * Attributes that should be mass-assignable.

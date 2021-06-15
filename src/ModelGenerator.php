@@ -14,7 +14,7 @@ class ModelGenerator
 
     private $table = null;
     private $properties = null;
-    private $modelNamespace = 'App';
+    private $modelNamespace = 'App\Models';
 
     /**
      * ModelGenerator constructor.

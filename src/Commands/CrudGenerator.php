@@ -130,6 +130,12 @@ class CrudGenerator extends GeneratorCommand
      */
     protected function buildViews()
     {
+        $ViewPath = $this->_getViewPath($this->name);
+
+        if ($this->files->exists($ViewPath) && $this->ask('Already exist Views. Do you want overwrite (y/n)?', 'y') == 'n') {
+            return $this;
+        }
+
         $this->info('Creating Views ...');
 
         $tableHead = "\n";

@@ -64,7 +64,7 @@ abstract class GeneratorCommand extends Command
      *
      * @var string
      */
-    protected $modelNamespace = 'App';
+    protected $modelNamespace = 'App\Models';
 
     /**
      * Controller Namespace.
@@ -235,7 +235,6 @@ abstract class GeneratorCommand extends Command
      */
     private function _getLayoutPath()
     {
-        $this->makeDirectory(resource_path("/views/components/content.blade.php"));
         return $this->makeDirectory(resource_path("/views/layouts/app.blade.php"));
     }
 
