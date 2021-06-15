@@ -1,0 +1,36 @@
+{
+    "name": "digitalfront/crud-generate",
+    "description": "Crud generate laravel 8",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thiago Augusto",
+            "email": "thiago.digitalfront@gmail.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "crud",
+        "DigitalFront",
+        "laravel crud generate",
+        "laravel package"
+    ],
+    "require": {
+        "laravel/framework": "^6.0|^7.0|^8.0",
+        "laravelcollective/html": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dfront\\CrudGenerate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "dfront\\CrudGenerate\\CrudServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

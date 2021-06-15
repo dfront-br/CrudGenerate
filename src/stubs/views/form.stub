@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="card-body">
+        {{form}}
+    </div>
+    <div class="card-footer mt-1 col-12 col-md-6 col-xl-4">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="form-group col-12 col-md-6 col-xl-4">
+    <strong>{{title}}:</strong>
+    {{ ${{modelNameLowerCase}}->{{column}} }}
+</div>

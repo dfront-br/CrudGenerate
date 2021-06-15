@@ -1,0 +1,9 @@
+<div class="content-header row">
+    <div class="mb-2 content-header-left col-md-9 col-12">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="float-left mb-0 content-header-title">{{ $slot }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
