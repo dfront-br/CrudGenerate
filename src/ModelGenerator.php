@@ -1,6 +1,6 @@
 <?php
 
-namespace dfront\CrudGenerator;
+namespace Digitalfront\CrudGenerator;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;

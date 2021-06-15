@@ -1,6 +1,6 @@
 <?php
 
-namespace dfront\CrudGenerate\Commands;
+namespace Digitalfront\CrudGenerator\Commands;
 
 use Illuminate\Support\Str;
 
@@ -40,7 +40,7 @@ class CrudGenerator extends GeneratorCommand
         $this->info('Running Crud Generator ...');
 
         $this->resource = $this->getNameInput();
-        $this->table = $this->argument('db');
+        $this->table = $this->getDBInput();
 
         // If table not exist in DB return
         if (!$this->tableExists()) {

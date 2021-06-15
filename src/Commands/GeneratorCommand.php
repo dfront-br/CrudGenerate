@@ -1,8 +1,8 @@
 <?php
 
-namespace dfront\CrudGenerate\Commands;
+namespace Digitalfront\CrudGenerator\Commands;
 
-use dfront\CrudGenerate\ModelGenerator;
+use Digitalfront\CrudGenerator\ModelGenerator;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Arr;
@@ -439,6 +439,7 @@ abstract class GeneratorCommand extends Command
         list($relations, $properties) = (new ModelGenerator($this->table, $properties, $this->modelNamespace))->getEloquentRelations();
 
         return [
+            '{{table}}' => $this->table,
             '{{fillable}}' => $fillable(),
             '{{rules}}' => $rules(),
             '{{relations}}' => $relations,
@@ -456,6 +457,16 @@ abstract class GeneratorCommand extends Command
     protected function getNameInput()
     {
         return trim($this->argument('name'));
+    }
+
+    /**
+     * Get the desired class name from the input.
+     *
+     * @return string
+     */
+    protected function getDBInput()
+    {
+        return trim($this->option('db'));
     }
 
     /**

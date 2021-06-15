@@ -21,13 +21,13 @@
     },
     "autoload": {
         "psr-4": {
-            "dfront\\CrudGenerate\\": "src/"
+            "Digitalfront\\CrudGenerator\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "dfront\\CrudGenerate\\CrudServiceProvider"
+                "Digitalfront\\CrudGenerator\\CrudServiceProvider"
             ]
         }
     },

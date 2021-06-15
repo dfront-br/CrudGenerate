@@ -1,8 +1,8 @@
 <?php
 
-namespace dfront\CrudGenerate;
+namespace Digitalfront\CrudGenerator;
 
-use dfront\CrudGenerate\Commands\CrudGenerator;
+use Digitalfront\CrudGenerator\Commands\CrudGenerator;
 use Illuminate\Support\ServiceProvider;
 
 /**
